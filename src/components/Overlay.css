@@ -1,0 +1,26 @@
+/* Overlay styling */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    backdrop-filter: blur(5px); /* Apply a slight blur to the background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease;
+  }
+  
+  #overlay.active {
+    opacity: 1; /* Show the overlay */
+  }
+  
+  #text {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+  }
+  
